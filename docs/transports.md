@@ -127,6 +127,7 @@ The `Http` transport is a generic way to log, query, and stream logs from an arb
 * __batch:__ (Default: **false**) Value indicating if batch mode should be used. A batch of logs to send through the HTTP request when one of the batch options is reached: number of elements, or timeout
 * __batchInterval:__ (Default: **5000 ms**) Value indicating the number of milliseconds to wait before sending the HTTP request
 * __batchCount:__ (Default: **10**) Value indicating the number of logs to cumulate before sending the HTTP request
+* __agent__: Node Http Agent to use for HTTP connections. This allows to configure HTTP options like keepAlive and proxy configurations by using a proxy agent
 
 ### Stream Transport
 
